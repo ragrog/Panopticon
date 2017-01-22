@@ -46,12 +46,13 @@ function Panopticon(config) {
 		// テーブルを取得できた時のイベント登録
 		value.on("value", function(snapshot) {
 			this.table[key] = snapshot.val();
-			this.changeEvent[key](this.table[key][snapshot.key()],snapshot.key());
+			this.changeEvent[key](this.table[key],null);
 		}.bind(this));
 
 		// テーブルが更新された時のイベント登録
 		value.on("child_changed", function(snapshot) {
-			this.table[key][snapshot.key()] = snapshot.val();
+			console.log(snapshot.val());
+			this.table[key] = snapshot.val();
 			this.changeEvent[key](this.table[key][snapshot.key()],snapshot.key());
 			this.changeEventForSystem[key](this.table[key][snapshot.key()],snapshot.key());
 		}.bind(this));
