@@ -1,0 +1,32 @@
+{
+	"today" : {
+		"date" : "2017019",
+		"data" : {
+			"1" : {
+				"time" : "23:59:00:22",
+				"domain" : "1www.google.com",
+				"ipaddress" : "192.168.2.11"
+			},
+			"2" : {
+				"time" : "23:59:00:22",
+				"domain" : "2www.google.com",
+				"ipaddress" : "192.168.2.11"
+			},
+			"3" : {
+				"time" : "23:59:00:22",
+				"domain" : "3www.google.com",
+				"ipaddress" : "192.168.2.11"
+			},
+			"4" : {
+				"time" : "23:59:00:22",
+				"domain" : "4www.google.com",
+				"ipaddress" : "192.168.2.11"
+			}
+		}
+	},
+	"blacklist" : {
+		"1" : "www.yahoo.co.jp",
+		"2" : "www.google.com",
+		"3" : "www.hogeho.com"
+	}
+}
